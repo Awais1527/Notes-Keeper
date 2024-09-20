@@ -7,10 +7,10 @@ export default function Signup() {
   const onChange = (e) => {
     setCredentials({ ...credentials, [e.target.name]: e.target.value });
 };
-
+const host = process.env.HOST_URL
 const handleSubmit = async (e) => {
   e.preventDefault();
-  const response = await fetch("http://localhost:5000/api/auth/createuser", {
+  const response = await fetch(`${host}/api/auth/createuser`, {
       method: "POST",
       headers: {
           "Content-Type": "application/json",
