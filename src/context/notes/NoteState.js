@@ -2,7 +2,7 @@ import { useState } from "react";
 import NoteContext from "./noteContext";
 
 const NoteState = (props) => {
-  const host = process.env.HOST_URL
+  const host = "https://notes-keeper-878aa6868e46.herokuapp.com";
 
   const state = {
     name: "Awais",

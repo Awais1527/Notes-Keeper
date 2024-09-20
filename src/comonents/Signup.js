@@ -7,7 +7,7 @@ export default function Signup() {
   const onChange = (e) => {
     setCredentials({ ...credentials, [e.target.name]: e.target.value });
 };
-const host = process.env.HOST_URL
+const host = "https://notes-keeper-878aa6868e46.herokuapp.com";
 const handleSubmit = async (e) => {
   e.preventDefault();
   const response = await fetch(`${host}/api/auth/createuser`, {

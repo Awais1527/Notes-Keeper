@@ -8,7 +8,7 @@ export default function Login() {
 
 
 
-    const host = process.env.HOST_URL
+    const host = "https://notes-keeper-878aa6868e46.herokuapp.com";
 
 
     
